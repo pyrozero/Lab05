@@ -1,17 +1,33 @@
 ﻿using System;
 
+
+
+
 class Program
 {
-    static void Main()
+    static void Main(string[]args)
     {
-        int val; // uninitialized variable
-        refMethod(out val);
-        Console.WriteLine(val);
-        Console.ReadLine();
+        int x = 17;
+        double y = x / 4.0;
+        double z = y * y;
+        Console.WriteLine(y);
+        Console.WriteLine(z);
+
+        int a = 5;
+        int b = 4;
+        Console.WriteLine(a + b);
+        Console.WriteLine(a + (b++));
+        Console.WriteLine(a + b);
+        Console.WriteLine(a + (++b));
+        Console.WriteLine(a + b);
+        Console.WriteLine(14 / a);
+        Console.WriteLine(14 % a);
+        
     }
 
-    static void refMethod(out int i)
-    {
-        i = i + 1;
-    }
+    
 }
+
+
+
+
