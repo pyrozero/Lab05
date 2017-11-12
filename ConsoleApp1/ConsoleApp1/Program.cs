@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        int val;   // do not initial value
+        int val; // uninitialized variable
         refMethod(out val);
         Console.WriteLine(val);
         Console.ReadLine();
